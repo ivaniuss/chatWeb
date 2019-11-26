@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+    <script src="/static/js/libs/jquery.js" ></script>
+    <link rel="stylesheet" href="/static/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/chatStyle.css">
+    <script src="/static/js/libs/bootstrap.js" ></script>
+    <script src="/static/js/chat.js" ></script>
+</head>
+
+<body>
+    <a href="/logout">Logout</a>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+        <th scope="col" width="30%">
+            <div id="current">
+            <label id="current_username"></label>
+                <button type="button"  id="get_message" class="btn btn-primary" onclick="get_current()">Get current user</button>
+              
+            </div>
+            <div id="users">
+                
+            </div>
+        </th>
+
+        <td scope="col" width="70%">    
+            <div id="message">
+            </div>
+            <div id="boxMessage">
+            </div>
+            <div>
+                <input height="100px" type="text" size="200" id="txtMessage" value= "">
+            </div>
+            <div>
+                
+                <button type="button" class="btn btn-primary    " onclick="send_message()">Send</button>
+            </div>
+        </td>
+    </tr>
+</thead>
+</table>
+</body>
+</html>
